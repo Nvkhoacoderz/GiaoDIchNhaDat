@@ -4,69 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42eb586c-4546-49d8-8937-0bc011cc0bd4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_12_8_1_jre11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/GiaoDichEditDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/GiaoDichEditUC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/OpenDialog/ChildrenType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/OpenDialog/OpenAndEditFormUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/OpenDialog/ParentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/OpenDialog/ResChildrenTypeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/business/EditGiaoDich/OpenDialog/ResParentTypeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/GiaoDichEditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/GiaoDichEditItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/GiaoDichEditModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/OpenDialog/ChildrenTypeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/OpenDialog/OpenAndEditFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/OpenDialog/OpenEditFormModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/OpenDialog/ParentTypeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/EditGiaoDich/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/EditGiaoDich/GiaoDichDAOGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/EditGiaoDich/OpenDialog/ChildrenTypeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/EditGiaoDich/OpenDialog/OpenEditFormGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/EditGiaoDich/OpenDialog/ParentTypeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/EditGiaoDich/OpenDialog/SQLServerOpenEditForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/EditGiaoDich/SQLServerGiaoDichEditDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/DeleteGiaoDich/DeleteGiaoDichUC.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/DeleteGiaoDich/DeleteGiaoDichUC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/FindGiaoDIch/FindGiaoDichUC.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/FindGiaoDIch/FindGiaoDichUC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/FindGiaoDIch/GiaoDichViewFindDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/FindGiaoDIch/GiaoDichViewFindDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDich.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDich.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichDat.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichDat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichListView/GiaoDichListViewDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichListView/GiaoDichListViewDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichListView/GiaoDichListViewUC.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichListView/GiaoDichListViewUC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichNha.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/business/GiaoDichNha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/DeleteGiaoDich/DeleteGiaoDichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/DeleteGiaoDich/DeleteGiaoDichController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/FindGiaoDich/GDViewFindItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/FindGiaoDich/GDViewFindItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/FindGiaoDich/GiaoDichFindModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/FindGiaoDich/GiaoDichFindModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/FindGiaoDich/TimGiaoDichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/FindGiaoDich/TimGiaoDichController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GDSubscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GDSubscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GiaoDichListView/GiaoDichListViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GiaoDichListView/GiaoDichListViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GiaoDichListView/GiaoDichListViewItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GiaoDichListView/GiaoDichListViewItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GiaoDichListView/GiaoDichListViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/GiaoDichListView/GiaoDichListViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/MainGiaoDIchUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/MainGiaoDIchUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/MainGiaoDich.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/MainGiaoDich.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presentation/Publisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/DeleteGiaoDIch/DeleteGiaoDichDAOGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/DeleteGiaoDIch/DeleteGiaoDichDAOGateway.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/DeleteGiaoDIch/SQLServerGiaoDichDeleteDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/DeleteGiaoDIch/SQLServerGiaoDichDeleteDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/FindGiaoDich/FindGiaoDichDAOGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/FindGiaoDich/FindGiaoDichDAOGateway.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/FindGiaoDich/SQLServerGiaoDichFindDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/FindGiaoDich/SQLServerGiaoDichFindDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/GiaoDichDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/GiaoDichDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/GiaoDichListView/GiaoDichListViewDAOGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/GiaoDichListView/GiaoDichListViewDAOGateway.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/GiaoDichListView/SQLServerGiaoDichListViewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/giaodichnhadat/presistence/GiaoDichListView/SQLServerGiaoDichListViewDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/MainGiaoDIchUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/MainGiaoDIchUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/MainGiaoDich.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presentation/MainGiaoDich.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/DeleteGiaoDIch/SQLServerGiaoDichDeleteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/DeleteGiaoDIch/SQLServerGiaoDichDeleteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/FindGiaoDich/SQLServerGiaoDichFindDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/FindGiaoDich/SQLServerGiaoDichFindDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/GiaoDichDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/GiaoDichDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/GiaoDichListView/SQLServerGiaoDichListViewDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/giaodichnhadat/presistence/GiaoDichListView/SQLServerGiaoDichListViewDAO.java" afterDir="false" />
-    </list>
+    <list default="true" id="42eb586c-4546-49d8-8937-0bc011cc0bd4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +27,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "editGiaoDich",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/DuAn/GiaoDIchNhaDat/src/com/giaodichnhadat/presistence/EditGiaoDich/EditDialog",
     "node.js.detected.package.eslint": "true",
@@ -150,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755701897418</updated>
-      <workItem from="1755701898563" duration="15111000" />
+      <workItem from="1755701898563" duration="15759000" />
     </task>
     <servers />
   </component>
