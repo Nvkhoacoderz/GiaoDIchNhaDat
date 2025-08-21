@@ -12,7 +12,7 @@ public class SQLServerGiaoDichDeleteDAO implements DeleteGiaoDichDAOGateway{
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String url ="jdbc:sqlserver://127.0.0.1:1433;databaseName=TeamForOne;TrustServerCertificate=True;";
 		String username="sa";
-		String password="Blocksix12!";
+		String password="Nguyenvukhoa544@";
 		
 		conn = DriverManager.getConnection(url, username, password);
         System.out.println("Connected!!!");

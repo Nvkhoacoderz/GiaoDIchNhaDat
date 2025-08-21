@@ -25,7 +25,7 @@
         <HBox alignment="CENTER_RIGHT" spacing="10">
             <Button fx:id="btnThem" prefHeight="26.0" prefWidth="114.0" text="Thêm giao dịch" />
             <Button fx:id="btnXoa" onAction="#handleXoa"  text="Xoá giao dịch"/>
-            <Button fx:id="btnSua"  text="Sửa giao dịch" />
+            <Button fx:id="btnSua" onAction="#handleSua" text="Sửa giao dịch" />
             <Button fx:id="btnTongSoLuong" text="Tổng số lượng giao dịch" />
             <Button fx:id="btnTrungBinh" text="Trung bình thành tiền" />
             <Button fx:id="btnXuat" text="Xuất giao dịch" />

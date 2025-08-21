@@ -1,6 +1,5 @@
 package com.giaodichnhadat.presistence;
 
-import java.text.DecimalFormat;
 import java.util.Date;
 
 public class GiaoDichDTO {

@@ -3,12 +3,23 @@ package com.giaodichnhadat.presentation;
 import java.sql.SQLException;
 
 import com.giaodichnhadat.business.DeleteGiaoDich.DeleteGiaoDichUC;
+import com.giaodichnhadat.business.EditGiaoDich.GiaoDichEditUC;
+import com.giaodichnhadat.business.EditGiaoDich.OpenDialog.OpenAndEditFormUseCase;
 import com.giaodichnhadat.business.FindGiaoDIch.FindGiaoDichUC;
 import com.giaodichnhadat.presentation.DeleteGiaoDich.DeleteGiaoDichController;
+import com.giaodichnhadat.presentation.EditGiaoDich.GiaoDichEditController;
+import com.giaodichnhadat.presentation.EditGiaoDich.GiaoDichEditItem;
+import com.giaodichnhadat.presentation.EditGiaoDich.GiaoDichEditModel;
+import com.giaodichnhadat.presentation.EditGiaoDich.OpenDialog.OpenAndEditFormController;
+import com.giaodichnhadat.presentation.EditGiaoDich.OpenDialog.OpenAndEditFormView;
+import com.giaodichnhadat.presentation.EditGiaoDich.OpenDialog.OpenEditFormModel;
+import com.giaodichnhadat.presentation.EditGiaoDich.Subscriber;
 import com.giaodichnhadat.presentation.FindGiaoDich.TimGiaoDichController;
 import com.giaodichnhadat.presentation.GiaoDichListView.GiaoDichListViewItem;
 import com.giaodichnhadat.presentation.GiaoDichListView.GiaoDichListViewModel;
 import com.giaodichnhadat.presistence.DeleteGiaoDIch.SQLServerGiaoDichDeleteDAO;
+import com.giaodichnhadat.presistence.EditGiaoDich.OpenDialog.SQLServerOpenEditForm;
+import com.giaodichnhadat.presistence.EditGiaoDich.SQLServerGiaoDichEditDAO;
 import com.giaodichnhadat.presistence.FindGiaoDich.SQLServerGiaoDichFindDAO;
 
 import javafx.collections.FXCollections;
@@ -110,7 +121,7 @@ public class MainGiaoDIchUI implements GDSubscriber {
             tableView.refresh();
         }
     }
-    
+
     @FXML
     private void handleXoa() throws SQLException, ClassNotFoundException {
     	// Lấy giao dịch được chọn trong bảng
@@ -137,5 +148,71 @@ public class MainGiaoDIchUI implements GDSubscriber {
                 tableView.getItems().remove(selectedItem); // xóa khỏi bảng
             }
         });
+    }
+
+    @FXML
+    private void handleSua() throws ClassNotFoundException, SQLException {
+        // Lấy giao dịch được chọn trong bảng
+        GiaoDichListViewItem selectedItem = tableView.getSelectionModel().getSelectedItem();
+
+        // Nếu chưa chọn gì thì thông báo
+        if (selectedItem == null) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Cảnh báo");
+            alert.setHeaderText(null);
+            alert.setContentText("Vui lòng chọn giao dịch để sửa.");
+            alert.showAndWait();
+            return;
+        }
+
+        String maGiaoDich = selectedItem.getMaGiaoDich();
+
+        // Tạo/cấu hình các controller, model cần thiết để truyền vào OpenAndEditFormView
+        OpenEditFormModel editFormModel = new OpenEditFormModel();
+        GiaoDichEditModel giaoDichEditModel = new GiaoDichEditModel();
+
+        // Đăng ký subscriber sau khi khởi tạo model
+        giaoDichEditModel.registerSubscriber(new Subscriber() {
+            @Override
+            public void update() {
+                GiaoDichEditItem itemDaSua = giaoDichEditModel.listItem;
+                if (itemDaSua != null) {
+                    for (int i = 0; i < viewModel.fullList.size(); i++) {
+                        GiaoDichListViewItem item = viewModel.fullList.get(i);
+                        if (item.getMaGiaoDich().equals(itemDaSua.getMaGiaoDich())) {
+                            viewModel.fullList.set(i, convertToListView(itemDaSua));
+                            break;
+                        }
+                    }
+                    tableView.setItems(viewModel.fullList);
+                    tableView.refresh();
+                }
+            }
+        });
+
+        OpenAndEditFormUseCase openAndEditFormUseCase = new OpenAndEditFormUseCase(new SQLServerOpenEditForm());
+        OpenAndEditFormController editFormController = new OpenAndEditFormController(openAndEditFormUseCase, editFormModel);
+        GiaoDichEditController giaoDichEditController = new GiaoDichEditController(giaoDichEditModel,
+                new GiaoDichEditUC(new SQLServerGiaoDichEditDAO())
+        );
+
+        // Tạo view sửa và show form
+        OpenAndEditFormView editFormView = new OpenAndEditFormView(editFormModel, editFormController, giaoDichEditController);
+        editFormView.showDialog(maGiaoDich);
+
+        // Không cần gọi setItems + refresh ở đây nữa, vì đã có callback trên giaoDichEditModel tự động cập nhật lại table khi sửa
+    }
+    private GiaoDichListViewItem convertToListView(GiaoDichEditItem itemDaSua) {
+        GiaoDichListViewItem lvItem = new GiaoDichListViewItem();
+        lvItem.setMaGiaoDich(itemDaSua.getMaGiaoDich());
+        lvItem.setLoaiGD(itemDaSua.getLoai());
+        lvItem.setDiaChi(itemDaSua.getDiaChi());
+        lvItem.setNgayGiaoDich(itemDaSua.getNgayGiaoDich());
+        lvItem.setDonGia(itemDaSua.getDonGia());
+        lvItem.setDienTich(itemDaSua.getDienTich());
+        lvItem.setLoai(itemDaSua.getLoaiNha() != null ? itemDaSua.getLoaiNha() : itemDaSua.getLoaiDat());
+//        lvItem.setThanhTien(/* Nếu có công thức hoặc set từ itemDaSua */);
+        // ... set các trường còn lại tương ứng
+        return lvItem;
     }
 }
